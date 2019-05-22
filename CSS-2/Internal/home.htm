@@ -1,0 +1,134 @@
+<html>
+	<head>
+		<style>
+			body{
+				margin:0px;
+				min-height:500px;
+			}
+			#topnav{
+					
+					width:100%;
+					position:fixed;
+					background-image:linear-gradient(to right,red,blue);
+					min-height:24px;
+					padding:11px;
+					text-align:center;
+					margin-top:-45px;
+					box-shadow:0px 10px 25px red;
+					
+			}
+			#topnav li{
+						display:inline;
+						margin-right:25px;
+						
+			}
+			
+			@keyframes navcolor{
+								10%{color:orange;}
+								30%{color:white;}
+								50%{color:pink;}
+								70%{color:cyan;}
+								90%{color:maroon;}					
+			}
+			#topnav li a{
+							color:white;
+							text-decoration:none;
+							font-size:19px;
+							font-weight:bold;
+							animation:navcolor;
+							animation-duration:3s;
+							animation-iteration-count:infinite;
+			}
+			
+			.clearblock{
+						clear:both;
+			}
+			
+			@keyframes mybanner{
+								30%{background-image:url('2.jpg');}
+								60%{background-image:url('3.jpg');}
+								80%{background-image:url('4.jpg');}
+								
+								
+			}
+			#banner{
+						
+						margin:auto;
+						text-align:center;
+						height:220px;
+						background-image:url('1.jpg');
+						background-height:100%;
+						background-width:100%;
+						background-position:center;
+						animation:mybanner;
+						animation-duration:3s;
+						animation-iteration-count:infinite;
+						color:white;
+						padding-top:93px;
+						box-shadow:0px 10px 25px red;
+			}
+			
+			#topinfo{
+					min-height:45px;
+			}
+			
+			#container{
+						margin:auto;
+						width:80%;
+						padding:2%;
+			}
+			#p2{
+				column-count:3;
+				text-align:justify;
+			}
+			#footer{
+					min-height:150px;
+					color:white;
+					text-align:center;
+					background-image:linear-gradient(blue,black);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="topinfo"></div>
+		<ul id="topnav">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="login.html">Log In</a></li>
+			<li><a href="signup.html">Sign Up</a></li>
+		</ul>
+			<div class="clearblock"></div>
+			<div id="banner">
+			<h2>This is from animated css effect</h2>
+			<p>
+				This will be moving infinite---------------
+			</p>
+			</div>
+		<div id="container">
+		<h3>About Us</h3>
+		<p id="p1">sjfufh dkjjfndd kdjvnidunv
+		dfndjinvi
+		vmojvnrenbrnb ivniefnv vfnvjerfnvk
+		vnkjenvre kj nbknrfkvn  vrnvrnvk</p>
+		
+		<p id="p2">
+		knfdsnfsnf kdvndkfkd iudhfuidhi iuhufuidhg dhguidhgiu
+		 ghgk gkjfdhgkfhgkdfhgkfd guhgf gfhgufkh fuhfu
+		  fghjdfkughf gukfhgkuf dhfysdf ydfgyudsgf uydgfuysdg fgf ydsgfuysgf udyfgfyudfg yufg uysfgyusg fuydsgf uydsgfdyus gfdf sdygfusyf gsuygfuy fgudyghgiufhghdfi
+		   fsfdhushfudfh ksfhkusdhfk sjdfhkf shdfkfh kdhfkuhf kf
+		    dfhfiudhfsdhfishf hfkudsh fk
+			 fdsjfksjf dffjsdlfj hgiufhg ifhugiu gfihg iufd</p>
+		</div>  
+		  
+		  <div id="footer">
+			<h4>This is from footer</h4>
+			<p>dkhfs dkfhdhfdh ifhuiufh ifhgdfh ifhufh ghdf iughiuh giurhgiu
+			skd  djkkhsd fdiuhfi fru vhv vhi iuhviurhvi r iuvhuiv reiuhv
+			 uhuirhvirhv vuhvu vihhviuhvi rihviurhv ire
+			 duf eouf ufhiofow oifgiofh erf reuhfr eruhrhf ufhriu hfuirr</p>
+			
+		  </div>
+		  
+	</body>
+</html>

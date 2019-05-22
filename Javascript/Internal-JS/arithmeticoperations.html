@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title> Arithmetic Operations </title>
+		<script>
+			function totalmarks()
+			{
+				var english=document.getElementById("e1").value;
+				var maths=document.getElementById("e2").value;
+				var gk=document.getElementById("e3").value;
+				
+				var total=parseInt(english)+parseInt(maths)+parseInt(gk);
+				document.getElementById("result").innerHTML=total;
+			}
+		</script>
+	</head>
+	<body>
+		<table bgcolor="skyblue" align="center">
+			<tr>
+				<th> English Marks </th>
+				<td> <input type="text" placeholder="Enter Your English Marks" id="e1"> </td>
+			</tr>
+			<tr>
+				<th> Maths Marks </th>
+				<td> <input type="text" placeholder="Enter Your Maths Marks" id="e2"> </td>
+			</tr>
+			<tr>
+				<th> Gerneral Knowledge Marks </th>
+				<td> <input type="text" placeholder="Enter Your GK Marks" id="e3"> </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"> <button onclick="totalmarks()"> Total </button> </td>
+			</tr>
+			<tr>
+				<th> Result </th>
+				<td id="result"> </td>
+			</tr>
+		</table>
+	</body>
+</html>

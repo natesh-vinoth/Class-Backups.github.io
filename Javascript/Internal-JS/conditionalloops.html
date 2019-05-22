@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<title> Conditions & Loops </title>
+		<script>
+			function testif()
+			{
+				var a=prompt("Enter the value of a ");
+				if(a>10)
+				{
+					alert("The value of a is greater than 10");
+				}
+			}//testif close
+			
+			function testifelse()
+			{
+				var a=prompt("Enter the value of a ");
+				var b=prompt("Enter the value of b ");
+				if(a>b)
+				{
+					alert("The value of a is greater");
+				}
+				else
+				{
+					alert("The value of b is greater");
+				}
+			}//testifelse close
+			
+			function testifelseif()
+			{
+				var age=prompt("Enter your Age:");
+				var voterid=prompt("Do you have Voter Id Y/N:");
+				if(age>=18 && voterid=="Y")
+				{
+					alert("You have right to Vote");
+				}
+				else if(age>=18 && voterid=="N")
+				{
+					alert("You must get a Voter Id to Vote");
+				}
+				else
+				{
+					alert("You do not have right to vote");
+				}
+			}//testifelseif close
+			
+			function testswitch()
+			{
+				var car=prompt("Enter your Favourite car You want to Search");
+				switch(car)
+				{
+					case "Honda":
+					document.getElementById("result").innerHTML="Your Favourite Car " +car+ " is in Stock";
+					break;
+					
+					case "Toyota":
+					document.getElementById("result").innerHTML="Your Favourite Car " +car+ " is in Stock";
+					break;
+					
+					case "BMW":
+					document.getElementById("result").innerHTML="Your Favourite Car " +car+ " is in Stock";
+					break;
+					
+					case "Mercedz":
+					document.getElementById("result").innerHTML="Your Favourite Car " +car+ " is in Stock";
+					break;
+					
+					default:
+					document.getElementById("result").innerHTML="Your Favourite Car " +car+ " is not in Stock";
+				} //switch close
+			} //testswitch() close
+			
+			function testwhile()
+			{
+				var i=0;
+				while(i<10)
+				{
+					document.write("The Value of i is " +i+ "<br>");
+					i++;
+				}
+			} //testwhile close
+			
+			function testfor()
+			{
+				for(var i=0;i<=10;i++)
+				{
+					document.write("The Value of i is " +i+ "<br>");
+				}
+			} //test for loop close
+			
+			function testdowhile()
+			{
+				var i=1;
+				do
+				{
+					document.write("The Value of i is " +i+ "<br>");
+					i++;
+				}
+				while(i<6)
+			} //test do while loop close
+		</script>
+	</head>
+	<body>
+		<button onclick="testif()"> Test If </button>
+		<button onclick="testifelse()"> Test If Else </button>
+		<button onclick="testifelseif()"> Test If Else If </button>
+		<button onclick="testswitch()"> Test Switch </button>
+		<div id="result"></div>
+		
+		<button onclick="testwhile()"> Test While </button>
+		<button onclick="testfor()"> Test For </button>
+		<button onclick="testdowhile()"> Test Do While </button>
+	</body>
+</html>

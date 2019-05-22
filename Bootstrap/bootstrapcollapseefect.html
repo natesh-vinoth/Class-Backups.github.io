@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title> Collapse </title>
+		<link rel="stylesheet" href="dist/css/bootstrap.css">
+		<script src="dist/js/jquery.min.js"></script>
+		<script src="dist/js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+					<button class="btn btn-info" data-toggle="collapse" data-target="#login"> Login </button>
+					<div class="collapse well" id="login">
+						<div class="form-group">
+							<div class="input-group">
+								<span class="input-group-addon">
+									<i class="glyphicon glyphicon-envelope"></i>
+								</span>
+								<input type="text" name="email" class="form-control" placeholder="Enter Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<span class="input-group-addon">
+									<i class="glyphicon glyphicon-lock"></i>
+								</span>
+								<input type="text" name="pass" class="form-control" placeholder="Enter Password">
+							</div>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary">
+								<span class="glyphicon glyphicon-arrow-right"></span>
+							</button>
+							<button type="reset" class="btn btn-danger">
+								<span class="glyphicon glyphicon-remove-circle"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

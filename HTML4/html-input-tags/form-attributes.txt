@@ -1,0 +1,20 @@
+
+name="" ----> To communicate with server side language
+
+class="" ----> To communicate with CSS
+
+id="" -------> To communicate with js, jquery, ajax
+
+placeholder="" -----> To give notification to user
+
+maxlength="" ------> To set capacity of input field(in char)
+
+size="" ------> To increase width of text box
+
+readonly="" -----> To make text box only readonly
+
+disabled="" -----> To make input field as inactive
+
+tabindex="" ------> To set sequence of cursor
+
+value=""  ------> To display some value by default

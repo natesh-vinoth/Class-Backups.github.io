@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<title> 2D Transform Methods </title>
+		<style>
+			div
+			{
+				height:100px;
+				width:100px;
+				margin:20px;
+				border:5px solid black;
+			}
+			div#div1
+			{
+				background-color:yellow;
+				-webkit-transition:transform 3s;
+				transition:transform 3s;
+			}
+			#div1:hover
+			{
+				-webkit-transform:translate(200px,100px);
+				transform:translate(200px,100px);
+			}
+			div#div2
+			{
+				background-color:pink;
+				-webkit-transition:transform 3s;
+				transition:transform 3s;
+			}
+			#div2:hover
+			{
+				-webkit-transform:rotate(-60deg);
+				transform:rotate(-60deg);
+			}
+			div#div3
+			{
+				background-color:green;
+				-webkit-transition:transform 3s;
+				transition:transform 3s;
+			}
+			#div3:hover
+			{
+				-webkit-transform:scale(3,2);
+				transform:scale(3,2);
+			}
+			div#div4
+			{
+				background-color:blue;
+				-webkit-transition:transform 3s;
+				transition:transform 3s;
+			}
+			#div4:hover
+			{
+				-webkit-transform:skewX(80deg);
+				transform:skewX(80deg);
+			}
+			div#div5
+			{
+				background-color:orange;
+				-webkit-transition:transform 3s;
+				transition:transform 3s;
+			}
+			#div5:hover
+			{
+				-webkit-transform:skewY(80deg);
+				transform:skewY(80deg);
+			}
+			div#div6
+			{
+				background-color:red;
+				-webkit-transition:transform 3s;
+				transition:transform 3s;
+			}
+			#div6:hover
+			{
+				-webkit-transform:skew(50deg,30deg);
+				transform:skewY(50deg,30deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">translate()</div>
+		<div id="div2">rotate()</div>
+		<div id="div3">scale()</div>
+		<div id="div4">skewX()</div>
+		<div id="div5">skewY()</div>
+		<div id="div6">skew()</div>
+	</body>
+</html>

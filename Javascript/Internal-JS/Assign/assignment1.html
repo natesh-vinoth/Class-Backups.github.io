@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<title> Assignment </title>
+		<link rel="stylesheet" href="dist/css/bootstrap.css">
+		
+		<script>
+			function pageload()
+			{
+				document.getElementById("b1").style.display="none";
+				document.getElementById("b2").style.display="none";
+				document.getElementById("b3").style.display="none";
+				document.getElementById("b4").style.display="none";
+			}
+			
+			function continental()
+			{
+				document.getElementById("b1").style.display="block";
+				document.getElementById("b2").style.display="none";
+				document.getElementById("b3").style.display="none";
+				document.getElementById("b4").style.display="none";
+			}
+			
+			function italian()
+			{
+				document.getElementById("b2").style.display="block";
+				document.getElementById("b1").style.display="none";
+				document.getElementById("b3").style.display="none";
+				document.getElementById("b4").style.display="none";
+			}
+			
+			function southindian()
+			{
+				document.getElementById("b3").style.display="block";
+				document.getElementById("b1").style.display="none";
+				document.getElementById("b2").style.display="none";
+				document.getElementById("b4").style.display="none";
+			}
+			
+			function northindian()
+			{
+				document.getElementById("b4").style.display="block";
+				document.getElementById("b1").style.display="none";
+				document.getElementById("b2").style.display="none";
+				document.getElementById("b3").style.display="none";
+			}
+		</script>
+	</head>
+	<body onload="pageload()">
+		<div class="container">
+			<div class="row">
+			<br>
+				<div class="col-md-3">
+					<button class="btn btn-info" onclick="continental()"> Continental </button>
+				</div>
+				<div class="col-md-3">
+					<button class="btn btn-info" onclick="italian()"> Italian </button>
+				</div>
+				<div class="col-md-3">
+					<button class="btn btn-info" onclick="southindian()"> South Indian </button>
+				</div>
+				<div class="col-md-3">
+					<button class="btn btn-info" onclick="northindian()"> North Indian </button>
+				</div>
+			</div>
+		</div>
+			<div id="b1">
+				<div class="jumbotron">
+				<div class="container">
+					<div class="col-md-4">
+						<img src="continent/2.png">
+					</div>
+					<div class="col-md-4">
+						<img src="continent/2.png">
+					</div>
+					<div class="col-md-4">
+						<img src="continent/2.png">
+					</div>
+				</div>
+				</div>
+			</div>
+			
+			<div id="b2">
+				<div class="jumbotron">
+				<div class="container">
+					<div class="col-md-4">
+						<img src="italian/1.jpg">
+					</div>
+					<div class="col-md-4">
+						<img src="italian/1.jpg">
+					</div>
+					<div class="col-md-4">
+						<img src="italian/1.jpg">
+					</div>
+				</div>
+				</div>
+			</div>
+			
+			<div id="b3">
+				<div class="jumbotron">
+				<div class="container">
+					<div class="col-md-4">
+						<img src="southindian/1.jpg">
+					</div>
+					<div class="col-md-4">
+						<img src="southindian/1.jpg">
+					</div>
+					<div class="col-md-4">
+						<img src="southindian/1.jpg">
+					</div>
+				</div>
+				</div>
+			</div>
+			
+			<div id="b4">
+				<div class="jumbotron">
+				<div class="container">
+					<div class="col-md-4">
+					
+						<img src="northindian/1.jpg">
+					</div>
+					<div class="col-md-4">
+						<img src="northindian/1.jpg">
+					</div>
+					<div class="col-md-4">
+						<img src="northindian/1.jpg">
+					</div>
+				</div>
+				</div>
+			</div>
+			
+		
+	</body>
+</html>

@@ -1,0 +1,152 @@
+<html>
+	<head>
+		<title> Working with Events </title>
+		<style>
+			*{
+				padding:0px;
+				margin:0px;
+			}
+			.box
+			{
+				height:30px;
+				width:175px;
+				border:2px solid blue;
+				border-radius:10px;
+			}
+			
+			button[type="button"]
+			{
+				height:35px;
+				width:75px;
+				background-color:blue;
+				color:white;
+				font-size:18px;
+				border:2px solid blue;
+				border-radius:5px;
+			}
+			
+			button[type="reset"]
+			{
+				height:35px;
+				width:75px;
+				background-color:red;
+				color:white;
+				font-size:18px;
+				border:2px solid red;
+				border-radius:5px;
+			}
+			
+			nav
+			{
+				padding:30px;
+				background-color:blue;
+			}
+			nav ul li
+			{
+				display:inline;
+			}
+			
+			li>a
+			{
+				text-decoration:none;
+				color:white;
+				font-size:20px;
+				font-weight:bold;
+				margin-right:10px;
+				
+			}
+			
+			
+		</style>
+		
+		<script>
+			function pageload()
+			{
+				document.getElementById("login").style.display="block";
+				document.getElementById("home").style.display="none";
+			} //pageload close
+			
+			function homepage()
+			{
+			
+				// fetch value of textboxes through id given.
+				
+				var email=document.getElementById("email").value;
+				var pass=document.getElementById("pass").value;
+				var status=true;
+				
+				if(email=="")
+				{
+					document.getElementById("email").style.border="2px solid red";
+					status=false;
+				}
+				else
+				{
+					document.getElementById("email").style.border="";
+				}
+				
+				if(pass=="")
+				{
+					document.getElementById("pass").style.border="2px solid red";
+					status=false;
+				}
+				else
+				{
+					document.getElementById("pass").style.border="";
+				}
+				
+				if(status==true)
+				{
+					document.getElementById("login").style.display="none";
+					
+					document.getElementById("b1").style.backgroundColor="yellow";
+					
+					document.getElementById("home").style.display="block";
+				}
+			}
+			
+			function logout()
+			{
+				document.getElementById("login").style.display="block";
+				
+				document.getElementById("b1").style.backgroundColor="white";
+				
+				document.getElementById("home").style.display="none";
+			}
+		</script>
+	</head>
+	<body onload="pageload()" id="b1">
+		<div id="login">
+			<table bgcolor="skyblue" align="center">
+				<tr>
+					<th> Email </th>
+					<td> <input type="text" id="email" placeholder="Enter Email" class="box"> </td>
+				</tr>
+				
+				<tr>
+					<th> Password </th>
+					<td> <input type="password" id="pass" placeholder="Enter Password" class="box"> </td>
+				</tr>
+				
+				<tr>
+					<td colspan="2" align="center">
+						<button type="button" onclick="homepage()"> Login </button>
+						<button type="reset" onclick="cleardata()"> Clear </button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="home">
+			<nav>
+				<ul>
+					<li> <a href="#"> Home </a> </li>
+					<li> <a href="#"> Add Contact </a> </li>
+					<li> <a href="#"> Add Customer </a> </li>
+					<li> <a href="#"> Logout </a> </li>
+				</ul>
+			</nav>
+			<h3 align="center"> Welcome to Home Page </h3>
+		</div>
+	</body>
+</html>

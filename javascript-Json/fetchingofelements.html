@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title>Fetching</title>
+		<script>
+			var totalpurchase= new Array();
+			var sum=0;
+			function totalbill()
+			{
+				var boxes=document.getElementsByName("box");
+				//alert(boxes.length);
+				for (var i=0; i<boxes.length;i++)
+				{
+					totalpurchase.push(boxes[i].value);
+					//alert(totalpurchase);
+					sum=sum+parseInt(totalpurchase[i]);
+					alert(sum);
+					
+				}
+			}
+			function calculate()
+			{
+				var tabledata="<table bgcolor='skyblue' align='center'>";
+					tabledata= tabledata+"<tr><th>Onion</th><th>Apple</th><th>Banana</th><th>Sum</th></tr>";
+					tabledata=tabledata+"<tr>";
+					for(var j=0;j<totalpurchase.length;j++)
+						{
+							
+								tabledata=tabledata+"<td>"+totalpurchase[j]+"</td>";
+							
+						}
+						tabledata=tabledata+"<td>"+sum+"</td>";
+					tabledata=tabledata+"</tr>";
+				tabledata=tabledata+"</table>"
+				document.getElementById("result").innerHTML=tabledata;
+			}
+			function deleteitem()
+			{
+				var sts=confirm("are you sure you want to delte the item");
+				if(sts=true)
+				{
+					var indexno=prompt("Enter the index to delete");
+					//delete totalpurchase[indexno];
+					totalpurchase.splice(indexno,1);
+					alert("Your item with index"+"is deleted");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th>Onion</th>
+				<td>
+					<input type="text" name="box">
+				</td>
+			</tr>
+			<tr>
+				<th>Apple</th>
+				<td>
+					<input type="text" name="box">
+				</td>
+			</tr>
+			<tr>
+				<th>Banana</th>
+				<td>
+					<input type="text" name="box">
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<td>
+						<button type="button" onclick="totalbill()">Total</button>
+						<button type="button" onclick="calculate()">Fetch</button>
+						<button type="button" onclick="deleteitem()">Delete</button>
+					</td>
+				</th>
+			</tr>
+		</table>
+		<div id="result"></div>
+	</body>
+</html>

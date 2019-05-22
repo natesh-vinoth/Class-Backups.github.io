@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Semantic Elements </title>
+		<style>
+			*
+			{
+				margin:0px;
+				padding:0px;
+			}
+			header
+			{
+				padding:20px;
+				background-color:gray;
+				border:1px solid gray;
+				box-shadow:5px 5px black;
+			}
+			nav
+			{
+				padding:35px;
+				background:linear-gradient(40deg,#e84460,#d4566b,#6b0A1b,#ec617a);
+				text-align:right;
+			}
+			nav ul li
+			{
+				display:inline;
+			}
+			li>a
+			{
+				text-decoration:none;
+				margin-right:10px;
+				color:white;
+				font-weight:bold;
+				font-size:18px;
+				-webkit-transition:text-shadow 3s;
+				transition:text-shadow 3s;
+			}
+			li>a:hover
+			{
+				text-shadow:1px 1px white;
+			}
+			#sliderimage
+			{
+				background-image:url('1.jpg');
+				height:500px;
+				background-size:cover;
+				position:relative;
+			}
+			#sliderdiv
+			{
+				position:absolute;
+				top:200px;
+				left:0%;
+				-webkit-animation-name:mysliderdiv;
+				-webkit-animation-duration:3s;
+				-webkit-animation-delay:1s;
+				animation-name:mysliderdiv;
+				animation-duration:3s;
+				animation-delay:1s;
+			}
+			@-webkit-keyframes mysliderdiv
+			{
+				100%{left:65%;}
+			}
+			@keyframes mysliderdiv
+			{
+				100%{left:65%;}
+			}
+			#sliderdiv>button
+			{
+				height:30px;
+				width:100px;
+				background:linear-gradient(40deg,#e84460,#d4566b,#6b0A1b,#ec617a);
+				border:2px solid #e84460;
+				border-radius:10px;
+				font-size:15px;
+				font-weight:bold;
+				color:white;
+			}
+			h3
+			{
+				text-transform:uppercase;
+				text-align:center;
+			}
+			h3::first-letter
+			{
+				color:blue;
+				font-size:30px;
+				font-family:sans-serif;
+			}
+			#about #services
+			{
+				padding:100px;
+				background:linear-gradient(to left,#FFEFD5,#FEF0DB,#FFFACD);
+				overflow:auto;
+			}
+			#about>article
+			{
+				text-align:justify;
+				line-height:30px;
+				font-size:15px;
+				margin:5px;
+			}
+			#portfolio
+			{
+				padding:100px;
+				overflow:auto;
+				
+			}
+			figure
+			{
+				height:150px;
+				width:150px;
+				float:left;
+				margin-left:40px;
+			}
+			figure>img
+			{
+				height:150px;
+				width:150px;
+				border:5px solid black;
+				border-radius:10px;
+				-webkit-transition:transform 3s;
+				transition:transform 3s;
+			}
+			figure>img:hover
+			{
+				-webkit-transform:scale(2,2);
+				transform:scale(2,2);
+			}
+			figcaption
+			{
+				margin-top:10px;
+				color:red;
+				text-transform:uppercase;
+			}
+			#clear
+			{
+				clear:both;
+			}
+			#left
+			{
+				float:left;
+			}
+			#services>article
+			{
+				height:200px;
+				background-color:orange;
+				line-height:50px;
+				font-weight:bold;
+				text-align:justify;
+				column-count:3;
+				column-rule:1px solid white;
+			}
+		</style>
+	</head>
+	<body>
+		<header></header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+		<section id="sliderimage">
+			<div id="sliderdiv">
+				<button type="button"> SUBMIT </button>
+			</div>
+		</section>
+		<section id="about">
+			<h3> About Us </h3>
+			<article>
+				It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+			The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+			content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as 
+			their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have 
+			evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+			</article><br>
+			<article>
+				It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+			The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+			content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as 
+			their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have 
+			evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+			</article>
+		</section><br><br>
+		<section id="portfolio">
+			<h3> My Portfolio </h3>
+			<figure>
+				<img src="3.jpg" alt="Text">
+				<img src="3.jpg" alt="Text">
+				<figcaption> My Portfolio </figcaption>
+			</figure>
+		</section>
+		<section id="clear"></section>
+		<section id="services">
+			<h3> Our Services </h3>
+			<aside id="left">
+				<h2>
+					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+				</h2>
+			</aside>
+			<article>
+				The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+			content here', making it look like readable English.
+			</article>
+		</section>
+		<section id="clear"></section>
+	</body>
+</html>

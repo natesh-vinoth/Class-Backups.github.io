@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<script>
+			function validate()
+			{
+				var name=document.getElementById("name").value;
+				var mobile=document.getElementById("mobile").value;
+				var email=document.getElementById("email").value;
+				var message=document.getElementById("message").value;
+				
+				var status=true;
+				
+				if(name=="")
+				{
+					document.getElementById("name").style.borderColor="red";
+					status=false;
+				}
+				else
+				{
+					document.getElementById("name").style.borderColor="";
+				}
+				
+				if(email=="")
+				{
+					document.getElementById("email").style.borderColor="red";
+					status=false;
+				}
+				else
+				{
+					document.getElementById("email").style.borderColor="";
+				}
+				
+				if(mobile=="")
+				{
+					document.getElementById("mobile").style.borderColor="red";
+					status=false;
+				}
+				else
+				{
+					document.getElementById("mobile").style.borderColor="";
+				}
+				
+				if(message=="")
+				{
+					document.getElementById("message").style.borderColor="red";
+					status=false;
+				}
+				else
+				{
+					document.getElementById("message").style.borderColor="";
+				}
+				
+				if(status==true)
+				{
+					document.getElementById("f1").submit();
+				}
+			}
+		</script>
+	</head>
+	<body>
+		
+		<form action="#" method="POST" id="f1">
+			<table align="center" cellpadding="10" bgcolor="pink">
+				
+				<tr>
+					<th> Full Name </th>
+					<td> <input type="text" id="name" placeholder="Your Name"> </td>
+				</tr>
+				<tr>
+					<th> Mobile Number </th>
+					<td> <input type="number" id="mobile" placeholder="Your Number"> </td>
+				</tr>
+				<tr>
+					<th> Email ID </th>
+					<td> <input type="text" id="email" placeholder="Your Email ID"> </td>
+				</tr>
+				<tr>
+					<th> Message </th>
+					<td> <textarea placeholder="Enter Message" id="message" cols="35" rows="6"></textarea> </td>
+				</tr>
+				<tr>
+					<th colspan="2">
+						<button type="button" onclick="validate()"> Send Message </button>
+						<button type="reset"> Clear </button>
+					</th>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

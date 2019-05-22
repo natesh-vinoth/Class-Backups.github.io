@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Transition </title>
+		<style>
+			#div1
+			{
+				height:300px;
+				width:250px;
+				border:2px solid black;
+				position:relative;
+			}
+			#div2
+			{
+				height:0px;
+				width:250px;
+				margin:0px;
+				background-color:blue;
+				position:absolute;
+				border:2px solid black;
+				-webkit-transition:height 3s;
+				opacity:0.5;
+			}
+			#div1:hover #div2
+			{
+				height:300px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			<div id="div2"></div>
+		</div>
+	</body>
+</html>

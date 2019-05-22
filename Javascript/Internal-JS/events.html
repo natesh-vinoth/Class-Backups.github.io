@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<title> Events </title>
+		<script>
+			function testclick()
+			{
+				alert("You Clicked me Once");
+			} //testclick close
+			
+			function testdblclick()
+			{
+				alert("You Clicked me Twice");
+			} //testdblclick close
+			
+			function testmouseover()
+			{
+				document.getElementById("btn1").style.backgroundColor="Orange";
+			} //test mouse over close
+			
+			function testmousemove()
+			{
+				document.getElementById("div1").style.backgroundColor="black";
+				document.getElementById("div1").style.color="white";
+			} //test mouse move close
+			
+			function testmouseout()
+			{
+				document.getElementById("div1").style.backgroundColor="yellow";
+				document.getElementById("div1").style.color="blue";
+			} //test mouse move close
+			
+			function testmouseup()
+			{
+				alert("You are not supposed to copy the content");
+			} //test mouse move up
+			
+			function testmousedown()
+			{
+				alert("Mouse down event occurs as soon as u press the mouse button and are not released")
+			} //test mouse down close
+			
+			function fetchcity(city)
+			{
+				alert("You choosed " +city);
+			} //onchange close
+			
+			function testkeypress()
+			{
+				alert("Onkeypress event is fired whenever a key is pressed and released");
+			} //key press close
+			
+			function testkeydown()
+			{
+				alert("Onkeydown event is fired whenever a key is pressed and released");
+			} //key down close
+			
+			function testkeyup()
+			{
+				alert("Onkeyup event is fired whenever a key is pressed and released");
+			} //key up close
+			
+			function testfocus()
+			{
+				document.getElementById("t2").style.backgroundColor="yellow";
+			} //onfocus close
+			
+			function testblur()
+			{
+				document.getElementById("t3").style.backgroundColor="red";
+			} //onblur close
+			
+			function pageload()
+			{
+				alert("Welcome to Java Script")
+			}
+		</script>
+		
+		<style>
+			#div1{
+				height:100px;
+				background-color:yellow;
+				color:blue;
+				line-height:35px;
+				font-size:15px;
+				font-family:sans-serif;
+				font-weight:bold;
+				text-align:justify;
+			}
+		</style>
+	</head>
+	<body onload="pageload()">
+		<button onclick="testclick()"> Click me once </button>
+		<button ondblclick="testdblclick()"> Click me Twice </button>
+		<button onmouseover="testmouseover()" id="btn1"> Move Mouse Over </button>
+		
+		<div id="div1" onmousemove="testmousemove()" onmouseout="testmouseout()" onmouseup="testmouseup()">
+			asdf asdf asdf asdf asdf asdf asdf asdf asdf
+			asdf asdf asdf asdf asdf asdf asdf asdf asdf
+			asdf asdf asdf asdf asdf asdf asdf asdf asdf
+			asdf asdf asdf asdf asdf asdf asdf asdf asdf
+			asdf asdf asdf asdf asdf asdf asdf asdf asdf
+		</div>
+		
+		<button onmousedown="testmousedown()"> Mouse Down </button>
+		<select	onchange="fetchcity(this.value)">
+			<option value="Select City"> Select City </option>
+			<option value="Banglore"> Banglore </option>
+			<option value="Mumbai"> Mumbai </option>
+			<option value="Pune"> Pune </option>
+		</select>
+		
+		<input type="text" id="t1" onkeypress="testkeypress()" placeholder="Press any Key">
+		<input type="text" id="t1" onkeydown="testkeydown()" placeholder="Press any Key">
+		<input type="text" id="t1" onkeyup="testkeyup()" placeholder="Press any Key">
+		<input type="text" id="t2" onfocus="testfocus()" placeholder="Press any Key">
+		<input type="text" id="t3" onblur="testblur()" placeholder="Press any Key">
+	</body>
+</html>

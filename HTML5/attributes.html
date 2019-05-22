@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Novalidate,list,multiple </title>
+	</head>
+	<body>
+		<form action="#" method="POST" novalidate>
+			<table bgcolor="skyblue" align="center">
+				<tr>
+					<th> Name </th>
+					<td>
+						<input type="text" placeholder="Enter Name" required>
+					</td>
+				</tr>
+				
+				<tr>
+					<th> Email </th>
+					<td>
+						<input type="email" placeholder="Enter Email" required>
+					</td>
+				</tr>
+				
+				<tr>
+					<th> Query </th>
+					<td>
+						<input list="ques">
+						<datalist id="ques">
+							<option value="What is JS"></option>
+							<option value="What is Jquery"></option>
+							<option value="What is MySql"></option>
+							<option value="How to add product using PHP?"></option>
+							<option value="How do we use media query"></option>
+							<option value="What are the types of errors?"></option>
+						</datalist>
+					</td>
+				</tr>
+				
+				<tr>
+					<th> Select Multiple Files to Upload </th>
+					<td>
+						<input type="file" name="photo" multiple>
+					</td>
+				</tr>
+				
+				<tr>
+					<th> Select Food Items </th>
+					<td> 
+						<select name="fooditems" multiple>
+							<option value="0"> Choose Your Favourite Food </option>
+							<option value="1"> Idli </option>
+							<option value="2"> Dosai </option>
+							<option value="3"> Paratha </option>
+							<option value="4"> Chapati </option>
+							<option value="5"> Upma </option>
+							<option value="6"> Plain Masala Dosai </option>
+							<option value="7"> Chats </option>
+							<option value="8"> Chinese </option>
+						</select> 
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2" align="center">
+						<button type="submit"> Submit </button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

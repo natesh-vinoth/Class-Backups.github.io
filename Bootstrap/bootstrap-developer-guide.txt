@@ -1,0 +1,133 @@
+--> Bootstrap is 1st framework of html, css & java script for responsive web design
+--> Bootstrap is collection of pre-defined classes  but able to modify
+--> Bootstrap is design based on GRID System
+	==> GRID System	
+		>> GRID System devided add devices in 4 Types
+			>> xsmall	(1px to 777px)
+			>> small	(778px to 990px)
+			>> medium	(991px to 1200px)
+			>> large	(>1200px)
+------------------------------------------------------------------------------------------------
+xsmall
+	>> col-xs-1
+	>> col-xs-2
+	>> col-xs-3
+	>> col-xs-4
+	>> col-xs-5
+	>> col-xs-6
+	>> col-xs-7
+	>> col-xs-8
+	>> col-xs-9
+	>> col-xs-10
+	>> col-xs-11
+	>> col-xs-12
+-----------------------------------------------------------------
+small
+	>> col-sm-1
+	>> col-sm-2
+	>> col-sm-3
+	>> col-sm-4
+	>> col-sm-5
+	>> col-sm-6
+	>> col-sm-7
+	>> col-sm-8
+	>> col-sm-9
+	>> col-sm-10
+	>> col-sm-11
+	>> col-sm-12
+--------------------------------------------------------------------
+medium
+	>> col-md-1
+	>> col-md-2
+	>> col-md-3
+	>> col-md-4
+	>> col-md-5
+	>> col-md-6
+	>> col-md-7
+	>> col-md-8
+	>> col-md-9
+	>> col-md-10
+	>> col-md-11
+	>> col-md-12
+--------------------------------------------------------------------------
+large	
+	>> col-lg-1
+	>> col-lg-2
+	>> col-lg-3
+	>> col-lg-4
+	>> col-lg-5
+	>> col-lg-6
+	>> col-lg-7
+	>> col-lg-8
+	>> col-lg-9
+	>> col-lg-10
+	>> col-lg-11
+	>> col-lg-12
+-----------------------------------------------------------------
+Note: Follow the steps while creating a webpage in bootstrap
+	1. In head section of html call the bootstrap.css file
+	2. follow body tag
+	3. inside bpdy follow following classes	
+		a. container (it leaves 15px from left and 15px from right)
+		b. container-fluid (it cover 100% width)
+	4. inside container / container-fluid follow class as
+		a. row
+			==> height is auto, width will be 100% in 1 page row can be call unlimited times because it's a class
+	5. inside a row follow columns but according to device 
+	
+	Note : in one row min 1 column and max 12 columns 
+------------------------------------------------------------------------------------
+For Background
+	>> bg-info
+	>> bg-warning
+	>> bg-success
+	>> bg-danger
+	>> well
+	>> jumbotron
+	
+For Text Alignment
+	>> text-left
+	>> text-right
+	>> text-center
+	>> text-justify
+------------------------------------------------------------------------------------------
+For Image
+	>> img-responsive
+	>> img-rounded
+	>> img-circle
+	>> img-thumbnail
+---------------------------------------------------------------------------------------
+For Table
+	>> table 
+	>> table-bordered
+	>> table-hover
+
+For TR
+	>> active
+	>> danger
+	>> success
+	>> info
+	>> winning
+---------------------------------------------------------------------------------------------
+For Pagination
+	>> pagination
+	>> pager
+-----------------------------------------------------------------------------------------
+For Alert Message
+	>> alert
+	>> alert-danger
+	>> alert-info
+	>> alert-warning
+	>>alert-success
+--------------------------------------------------------------------------------------------
+For Panel
+	>> panel
+	>> panel-primary
+	>> panel-heading
+	>> panel-body
+	>> panel-danger
+	>> panel-info
+	>> panel-success
+	>> panel-warning
+	>> panel-default
+	>> panel-footer

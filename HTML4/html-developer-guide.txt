@@ -1,0 +1,29 @@
+HTML : hypertext markup language, use to design basic web page, because it has limitation of property and values
+--> html is collections of pre-defined tags
+--> tags
+	<> Open Tag
+	</> Close Tag
+User --> browser --> abc.com 
+-------------------------------------------------------------
+	Every website page structure is different, and the contents of all the pages are also different. 
+	Even in 1 page all the contents never look same. 
+--------------------------------------------------------------------
+Heading Tags
+
+	<h1> ...... <h6> - To create a heading of blocks in webpage
+	h1 to h6 - use max 3 times in 1 page else google will give warning error
+	If we use h1 to h6 more than 3 times google will consider as we deveope using only HTML not CSS or Bootstrap
+	Then UI will consider User Experience(UX) is bad
+-------------------------------------------------------------------------
+How many methods to devide a html body into multiple blocks?
+	There are totally 4 methods
+		1. Table - Non Responsive + Bad Performance
+		2. Frameset - Non Responsive + Good Performance
+		3. Div + CSS = Bootstrap - Responsive + Ajax (Better Performance)
+----------------------------------------------------------------------------
+	Types of List in HTML
+		--> OL - Order List - To display content in page with point and sub point
+		--> UL - Unorder List - 99% use for cating navigation
+		--> DL - Definition List - For Blog, Forums, Articles, News, Comments, etc....
+----------------------------------------------------------------------------
+		

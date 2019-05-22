@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title> Working </title>
+		<style>
+			#div1
+			{
+				height:300px;
+				width:100px;
+				background-color:black;
+				position:relative;
+			}
+			
+			#btn1
+			{
+				position:absolute;
+				left:25px;
+				top:25px;
+				height:30px;
+				width:50px;
+				background-color:red;
+				border:2px solid red;
+				-webkit-transition:width 2s;
+				transition:width 2s;
+			}
+			
+			#btn1:hover
+			{
+				width:75px;
+			}
+			
+			#btn2
+			{
+				position:absolute;
+				left:25px;
+				top:70px;
+				height:30px;
+				width:50px;
+				background-color:yellow;
+				border:2px solid yellow;
+				-webkit-transition:width 2s;
+				transition:width 2s;
+			}
+			
+			#btn2:hover
+			{
+				width:75px;
+			}
+			
+			#btn3
+			{
+				position:absolute;
+				left:25px;
+				top:120px;
+				height:30px;
+				width:50px;
+				background-color:green;
+				border:2px solid green;
+				-webkit-transition:width 2s;
+				transition:width 2s;
+			}
+			
+			#btn3:hover
+			{
+				width:75px;
+			}
+		</style>
+		
+		<script>
+			function red()
+			{
+				document.getElementById("b1").style.backgroundColor="red";
+				document.getElementById("h3").innerHTML="U Changed to Red Theme";
+			}
+			
+			function yellow()
+			{
+				document.getElementById("b1").style.backgroundColor="yellow";
+				document.getElementById("h3").innerHTML="U Changed to Yellow Theme";
+			}
+			
+			function green()
+			{
+				document.getElementById("b1").style.backgroundColor="green";
+				document.getElementById("h3").innerHTML="U Changed to Green Theme";
+			}
+		</script>
+	</head>
+	<body id="b1">
+		<h3 align="center" id="h3"> Default Theme is White </h3>
+		
+		<div id="div1">
+			<button onclick="red()" id="btn1"></button>
+			<button onclick="yellow()" id="btn2"></button>
+			<button onclick="green()" id="btn3"></button>
+		</div>
+	</body>
+</html>

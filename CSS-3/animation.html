@@ -1,0 +1,37 @@
+<!docttype html>
+<html>
+	<head>
+		<title> Animation </title>
+		<style>
+			div
+			{
+				height:50px;
+				width:50px;
+				border:2px solid black;
+				border-radius:100%;
+				background-color:yellow;
+				<!---webkit-animation-name:mydiv;
+				-webkit-animation-duration:3s;
+				animation-name:mydiv;
+				animation-duration:3s;-->
+				
+				-webkit-animation:mydiv 3s infinite;
+				animation:mydiv 3s infinite;;
+			}
+			
+			@keyframes mydiv
+			{
+				from{background-color:yellow;}
+				to{background-color:green;}
+			}
+			@-webkit-keyframes mydiv
+			{
+				from{background-color:yellow;}
+				to{background-color:green;}
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

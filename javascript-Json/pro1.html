@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title> JSON </title>
+		<script>
+			function fetchJsondata()
+			{
+				var jsondata='[{"name":"vinoth","city":"apm","address":"tamilnadu"},{"name":"kumar","city":"bangalore","address":"karnataka"},{"name":"kumaran","city":"tviandrum","address":"kerala"}]';
+				//alert("The length of Json Data is "+jsondata.length);
+				var mydata=JSON.parse(jsondata); //Converting JSON String into Array
+				//alert(mydata.length);
+				
+				var data="<table bgcolor='yellow' align='center' border='1'>";
+				data=data+"<tr><th>Name</th><th>city</th><th>address</th></tr>";
+				for(var i=0;i<mydata.length;i++)
+				{
+					data=data+"<tr>";
+						data=data+"<td>"+mydata[i].name+"</td>";
+						data=data+"<td>"+mydata[i].city+"</td>";
+						data=data+"<td>"+mydata[i].address+"</td>";
+					data=data+"</tr>";
+				}
+				
+				
+				data=data+"</table>";
+				
+				document.getElementById("result").innerHTML=data;
+			}
+			
+			function fetchJsonajax()
+			{
+				var xhttp;
+				  if (window.XMLHttpRequest) {
+					// code for modern browsers
+					xhttp = new XMLHttpRequest();
+					} else {
+					// code for IE6, IE5
+					xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+				  }
+				  xhttp.onreadystatechange = function() 
+				  {
+					if (this.readyState == 4 && this.status == 200) {
+					  //document.getElementById("result1").innerHTML = this.responseText;
+					  var mydata=JSON.parse(this.responseText);
+					  //alert(mydata.length);
+					  
+					  var data="<table bgcolor='yellow' align='center' border='1'>";
+						data=data+"<tr><th>Name</th><th>city</th><th>address</th></tr>";
+					  for(var i=0;i<mydata.length;i++)
+						{
+							data=data+"<tr>";
+								data=data+"<td>"+mydata[i].name+"</td>";
+								data=data+"<td>"+mydata[i].city+"</td>";
+								data=data+"<td>"+mydata[i].address+"</td>";
+							data=data+"</tr>";
+						}
+				
+				
+						data=data+"</table>";
+				
+						document.getElementById("result").innerHTML=data;
+					}
+				  };
+				  xhttp.open("GET", "user.json", true);
+				  xhttp.send();
+			}
+		</script>
+	</head>
+	<body>
+		<button type="button" onclick="fetchJsondata()"> Fetch Json </button>
+		<button type="button" onclick="fetchJsonajax()"> Fetch Json Data With Ajax </button>
+		<div id="result"></div>
+		<div id="result1"></div>
+		
+	</body>
+</html>

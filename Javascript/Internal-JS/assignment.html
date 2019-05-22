@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title> Arithmetic Operations </title>
+		<script>
+			function friends()
+			{
+				var a=13000;
+				var b=500;
+				var c=a/b;
+				document.getElementById("result").innerHTML=c;
+			}
+		</script>
+	</head>
+	<body>
+		<table bgcolor="skyblue" align="center">
+			<tr>
+				<th> Total Amount </th>
+				<td> 13000 </td>
+			</tr>
+			
+			<tr>
+				<th> Friends Share </th>
+				<td> 500 </td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" align="center">
+					<button onclick="friends()"> Result </button>
+				</td>
+			</tr>
+			
+			<tr>
+				<th> Total Friends </th>
+				<td id="result"> </td>
+			</tr>
+		</table>
+	</body>
+</html>

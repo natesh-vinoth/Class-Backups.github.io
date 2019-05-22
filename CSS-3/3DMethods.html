@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<title> 3D Transform Methods </title>
+		<style>
+			div
+			{
+				height:100px;
+				width:100px;
+				margin:20px;
+				border:5px solid black;
+			}
+			div#div1
+			{
+				background-color:yellow;
+				-webkit-transition:transform 3s;
+				transition:transform 3s;
+			}
+			#div1:hover
+			{
+				-webkit-transform:rotateX(180deg);
+				transform:rotateX(180deg)
+			}
+			div#div2
+			{
+				background-color:pink;
+				-webkit-transition:transform 3s;
+				transition:transform 3s;
+			}
+			#div2:hover
+			{
+				-webkit-transform:rotateY(180deg);
+				transform:rotateY(180deg);
+			}
+			div#div3
+			{
+				background-color:green;
+				-webkit-transition:transform 3s;
+				transition:transform 3s;
+			}
+			#div3:hover
+			{
+				-webkit-transform:rotateZ(180deg);
+				transform:rotateZ(180deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">rotateX()</div>
+		<div id="div2">rotateY()</div>
+		<div id="div3">rotateZ()</div>
+	</body>
+</html>

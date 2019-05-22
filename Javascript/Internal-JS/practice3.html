@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title> City Validation </title>
+		<script>
+			function validate()
+			{
+				var city=document.getElementById("city").value;
+
+				var status=true;
+				
+				if(city=="")
+				{
+					document.getElementById("city").style.borderColor="red";
+					status=false;
+				}
+				else
+				{
+					document.getElementById("city").style.borderColor="";
+				}				
+				return status;
+			}
+		</script>
+	</head>
+	<body onSubmit="return validate()">
+		<table>
+			<tr>
+				<th> City </th>
+				<td>
+					<select id="city">
+						<option value=""> Choose City </option>
+						<option value="Bangalore"> Bangalore </option>
+						<option value="Chennai"> Chennai </option>
+						<option value="Mumbai"> Mumbai </option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td> <button>Submit</button> </td>
+			</tr>
+		</table>
+	</body>
+</html>

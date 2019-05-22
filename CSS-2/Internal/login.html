@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<style>
+			body{
+				margin:0px;
+				min-height:500px;
+			}
+			#topnav{
+					
+					width:100%;
+					position:fixed;
+					background-image:linear-gradient(to right,red,blue);
+					min-height:24px;
+					padding:11px;
+					text-align:center;
+					margin-top:-45px;
+					box-shadow:0px 10px 25px red;
+					
+			}
+			#topnav li{
+						display:inline;
+						margin-right:25px;
+						
+			}
+			
+			@keyframes navcolor{
+								10%{color:orange;}
+								30%{color:white;}
+								50%{color:pink;}
+								70%{color:cyan;}
+								90%{color:maroon;}					
+			}
+			#topnav li a{
+							color:white;
+							text-decoration:none;
+							font-size:19px;
+							font-weight:bold;
+							animation:navcolor;
+							animation-duration:3s;
+							animation-iteration-count:infinite;
+			}
+			#topinfo{
+					min-height:45px;
+			}
+			#footer{
+					min-height:150px;
+					color:white;
+					text-align:center;
+					background-image:linear-gradient(blue,black);
+			}
+			#inputblock{
+				width:300px;
+				height:auto;
+				margin:auto;
+				margin-top:30px;
+				border:1px solid orange;
+				border-radius:0px 70px 0px 70px;
+				padding:10px;
+				box-shadow:10px 0px 30px orange;
+			}
+			legend{
+				background:black;
+				color:white;
+				padding:5px;
+				font-weight:bold;
+				border-radius:5px;
+			}
+			.inputbox{
+				width:100%;
+				height:25px;
+			}
+			.biginput{
+				height:60px !important;
+				resize:none;
+			}
+			.inputbox:focus{
+				box-shadow:1px 1px 10px red;
+				border:2px solid red;
+			}
+			button{
+				border:none;
+				background:darkblue;
+				color:white;
+				font-weight:bold;
+				padding:5px 15px 5px;
+				transition:border-radius 2s, background 2s;
+			}
+			button:hover{
+				background:black;
+				border-radius:10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="topinfo"></div>
+		<ul id="topnav">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="login.html">Log In</a></li>
+			<li><a href="signup.html">Sign Up</a></li>
+		</ul>
+			
+		<div id="container">
+			<fieldset id="inputblock">
+				<legend> Login </legend>
+				<table align="center" width="100%" cellpadding="8">
+					<tr>
+						<th> User Name </th>
+						<td> <input type="text" class="inputbox"> </td>
+					</tr>
+					<tr>
+						<th> Password </th>
+						<td> <input type="text" class="inputbox"> </td>
+					</tr>
+					<tr>
+						<th colspan="2"> <button> Login </button> </th>
+					</tr>
+				</table>
+			</fieldset>
+		</div>  
+		  
+		  <div id="footer">
+			<h4>This is from footer</h4>
+			<p>dkhfs dkfhdhfdh ifhuiufh ifhgdfh ifhufh ghdf iughiuh giurhgiu
+			skd  djkkhsd fdiuhfi fru vhv vhi iuhviurhvi r iuvhuiv reiuhv
+			 uhuirhvirhv vuhvu vihhviuhvi rihviurhv ire
+			 duf eouf ufhiofow oifgiofh erf reuhfr eruhrhf ufhriu hfuirr</p>
+			
+		  </div>
+		  
+	</body>
+</html>

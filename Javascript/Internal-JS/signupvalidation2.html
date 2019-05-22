@@ -1,0 +1,162 @@
+<html>
+	<head>
+		<title> Sign Up Validation </title>
+		<script>
+			function validate()
+			{
+				var fname=document.getElementById("fname").value;
+				var lname=document.getElementById("lname").value;
+				var email=document.getElementById("email").value;
+				var mobile=document.getElementById("mobile").value;
+				var city=document.getElementById("city").value;
+				var address=document.getElementById("address").value;
+				
+				var male=document.getElementById("male").checked;
+				var female=document.getElementById("female").checked;
+				var chk1=document.getElementById("chk1").checked;
+				var chk2=document.getElementById("chk2").checked;
+				var chk3=document.getElementById("chk3").checked;
+				var chk4=document.getElementById("chk4").checked;
+				
+				var status=true;
+				
+				if(fname=="")
+				{
+					document.getElementById("fname").style.borderColor="red";
+					status=false;
+				}
+				else
+				{
+					document.getElementById("fname").style.borderColor="";
+				}
+				
+				if(lname=="")
+				{
+					document.getElementById("lname").style.borderColor="red";
+					status=false;
+				}
+				else
+				{
+					document.getElementById("lname").style.borderColor="";
+				}
+				
+				if(email=="")
+				{
+					document.getElementById("email").style.borderColor="red";
+					status=false;
+				}
+				else
+				{
+					document.getElementById("email").style.borderColor="";
+				}
+				
+				if(mobile=="")
+				{
+					document.getElementById("mobile").style.borderColor="red";
+					status=false;
+				}
+				else
+				{
+					document.getElementById("mobile").style.borderColor="";
+				}
+				
+				if(city=="")
+				{
+					document.getElementById("city").style.borderColor="red";
+					status=false;
+				}
+				else
+				{
+					document.getElementById("city").style.borderColor="";
+				}
+				
+				if(address=="")
+				{
+					document.getElementById("address").style.borderColor="red";
+					status=false;
+				}
+				else
+				{
+					document.getElementById("address").style.borderColor="";
+				}
+				
+				if(male==true || female==true)
+				{
+					document.getElementById("gendererr").innerHTML=""
+				}
+				else
+				{
+					document.getElementById("gendererr").innerHTML="Please Choose Gender";
+					document.getElementById("gendererr").style.color="red";
+				}
+				
+				return status;
+			}
+		</script>
+	</head>
+	<form action="#" method="POST" onsubmit="return validate()">
+		<table bgcolor="skyblue" align="center" cellpadding=10>
+			<tr>
+				<th> First Name </th>
+				<td> <input type="text" id="fname" placeholder="Enter First Name"> </td>
+			</tr>
+			
+			<tr>
+				<th> Last Name </th>
+				<td> <input type="text" id="lname" placeholder="Enter Last Name"> </td>
+			</tr>
+			
+			<tr>
+				<th> Email </th>
+				<td> <input type="email" id="email" placeholder="Enter Email"> </td>
+			</tr>
+			
+			<tr>
+				<th> Mobile Number </th>
+				<td> <input type="tele" id="mobile" placeholder="Enter Mobile Number"> </td>
+			</tr>
+			
+			<tr>
+				<th> City </th>
+				<td>
+					<select id="city">
+						<option value="Choose City"> Choose City </option>
+						<option value="Bangalore"> Bangalore </option>
+						<option value="Chennai"> Chennai </option>
+						<option value="Mumbai"> Mumbai </option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<th> Address </th>
+				<td> <textarea id="address"></textarea> </td>
+			</tr>
+			
+			<tr>
+				<th> Gender </th>
+				<td>	<input type="radio" id="male" name="gender" value="Male"> Male
+						<input type="radio" id="female" name="gender" value="Female"> Female
+						<br> <i id="gendererr"></i>
+				</td>
+				
+			</tr>
+			
+			<tr>
+				<th> Hobby </th>
+				<td>	<input type="checkbox" id="chk1" name="chkbox" value="Reading"> Reading
+						<input type="checkbox" id="chk2" name="chkbox" value="Writing"> Writing
+						<input type="checkbox" id="chk3" name="chkbox" value="Singing"> Singing
+						<input type="checkbox" id="chk4" name="chkbox" value="Dancing"> Dancing
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" align="center">
+					<button type="submit"> Signup </button>
+					<button type="reset"> Clear </button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</html>

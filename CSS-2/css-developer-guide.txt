@@ -1,0 +1,94 @@
+CSS - Cascading Style Sheet
+----> In HTML we have learn all about pre-defined tags, because of limited property and values it will not help to design a very professional page
+
+CSS - It has unlimited property and values, after combining html and css it extends the features of html
+
+----> Example 
+		
+		<div style="height:200px; width:200px; background:red;"> </div>
+		
+		Note ----> before : is called property
+				   after : is called value
+
+----> Types of CSS (Using how many methods css can combine with html)
+
+		1. Inline ----- (5% uses max) - better for learning purposes
+		2. Internal --- (5 to 10% uses max)
+		3. External --- (up to 90% use)
+----------------------------------------------------------------------------------------------
+	Properties
+		height
+		width
+		background
+
+Q.1. How to convert a block level element to inline element?
+Ans: Propoerty name is float
+		float:from block to inline
+			left-->To arrange the container from left to right
+			right-->To arrange the container from right to left
+------------------------------------------------------------------------------------
+Q.2. How to apply/remove gap from respective side
+Ans: margin:auto; to align the container in middle of present area
+	 margin:20px; to apply 20px gap from all side
+	 margin-left:20px; to apply 20px gap from left side
+	 margin-top:20px; to apply 20px gap from top side
+	 margin-right:20px; to apply 20px gap from right side
+	 margin-bottom:20px; to apply 20px gap from bottom side
+--------------------------------------------------------------------------------------
+width:---->
+	width: in px;
+	width: in %;
+	min-width: px / %;
+	max-width: px / %;
+-----------------------------------------------------------------------------------
+Difference between px and %
+	----> Incase of px page will be screen dependent
+	----> Incase of % page will be screen independent (Responsive Page)
+-----------------------------------------------------------------------------------
+border:
+	type: solid, dotted, dashed
+	border: 10px solid red;
+	border-left;
+	border:right;
+	border:top;
+	border:bottom;
+-------------------------------------------------------------------------------------
+border-radius:
+	border-radius: 20px in all 4 corner will be minus by 20 px;
+	border-radius: topleft topright bottomright bottomleft;
+	border-radius: 2px 5px 10px 20px;
+------------------------------------------------------------------------------------
+padding:
+	padding apply gap outside of container
+	padding apply gap inside of container
+	padding:20px;
+	padding-left:20px;
+	padding=right:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+----------------------------------------------------------------------------------------
+Inline CSS	
+	1. It is one to one (once css code and one html tag)
+	2. because of duplicate code file weight will increase
+	3. if file is heavy the client to server communication will be slow.
+	4. if page is slow  the user experience will be bad
+	5. if inline css then page will not come in google search.
+------------------------------------------------------------------------------------------
+
+INTERNAL CSS
+	--> it is one to many ..(css code one and html code many times)
+	--> one to many is possible using following methods
+		1. css by tag name
+		2. css by id - Ex <div id="hello"> ---> mention in css as #hello
+		3. css by class - Ex <div class="hello"> ---> mention in css as .hello
+		4. css by tag group
+		5. css by parent and child group
+		
+
+
+
+
+
+
+
+

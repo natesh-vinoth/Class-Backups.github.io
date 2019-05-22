@@ -1,0 +1,48 @@
+Bootstrap Developer Guide
+
+Grid System
+
+>> xs - for mobile phones - col-xs-12
+>> sm - for tablets - col-sm-12
+>> md - for desktops - col-md-12
+>> lg - for larger desktops (Eg.Projector) - col-lg-12
+----------------------------------------------------------------
+Button Types
+
+btn-default
+btn-primary
+btn-success
+btn-info
+btn-warning
+btn-danger
+btn-link
+---------------------------------------------------
+Where button classes are used
+
+<a>
+<button>
+<input>
+--------------------------------------------------------
+Button Size
+
+.btn-lg
+.btn-md
+.btn-sm
+.btn-xs
+-----------------------------------------------------
+To Active / Disables button
+
+.active
+.disabled
+--------------------------------------------------
+If a column size is 6 and button also should be in same size inside the column we can use
+
+btn-block
+------------------------------------------------------------
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+ <html>
+	<head>
+		<style>
+			#block1{
+				margin:1%;
+				width:31.33%;
+				background:blue;
+				height:200px;
+				transition:height 5s,width 3s;
+				float:left;
+			}
+			#block1:hover{
+				height:300px;
+				background:red;
+			}
+			#block2{
+				margin:1%;
+				width:31.33%;
+				background:blue;
+				height:200px;
+				transition:margin-left 5s,background 3s;
+				float:left;
+			}
+			#block2:hover{
+				margin-left:100px;
+				background:red;
+			}
+			#block3{
+				margin:5%;
+				width:48.33%;
+				background:blue;
+				height:200px;
+				transition:transform 5s,background 3s,border-radius 5s;
+				clear:both;
+			}
+			#block3:hover{
+				transform:rotate(100deg);
+				background:red;
+				border-radius:70%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="block1"></div>
+		<div id="block2"></div>
+		<div id="block3"></div>
+	</body>
+</html>
